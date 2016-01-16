@@ -22,7 +22,7 @@ private class Test_ProgramTrigger {
         Account testAcct = new Account(Name = 'Test Acct');
         insert testAcct;
         
-        AccountTeamMember atm = new AccountTeamMember(AccountId = testAcct.Id, TeamMemberRole = 'Account Manager', UserId = testUser.Id);
+        AccountTeamMember atm = new AccountTeamMember(AccountId = testAcct.Id, TeamMemberRole = 'Pharmacy Account Manager', UserId = testUser.Id);
         insert atm;
         
         Opportunity testOpp = new Opportunity(AccountId = testAcct.Id, Name = 'Test Acct - Program', StageName = 'Qualification', CloseDate = System.today());
