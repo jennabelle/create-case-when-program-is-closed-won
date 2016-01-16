@@ -15,7 +15,7 @@ private class Test_ProgramTrigger {
         List<Profile> profile = new List<profile>([ Select Id, Name From Profile Where Name = 'Implementation Managers' LIMIT 1 ]);
        
         // create fake data
-        User testUser = new User(FirstName = 'Jenna', LastName = 'Vuong', Email = 'jenna@test.com', Alias = 'jenna', Username = 'jenna@test.com', LocaleSidKey = 'en_US',
+        User testUser = new User(FirstName = 'Jenna', LastName = 'V', Email = 'jenna@test.com', Alias = 'jenna', Username = 'jenna@test.com', LocaleSidKey = 'en_US',
                                 TimeZoneSidKey = 'GMT', ProfileID = profile[0].Id, LanguageLocaleKey = 'en_US', EmailEncodingKey = 'UTF-8');
         insert testUser;
         
